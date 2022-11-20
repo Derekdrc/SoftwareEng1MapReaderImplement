@@ -31,5 +31,4 @@ int main() {
 	::CoUninitialize();
 
 	return EXIT_SUCCESS;
-	cout << "Welcome to the map reader for the blind";
 }
