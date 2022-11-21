@@ -18,6 +18,7 @@ public:
 	}
 	int getAddress() {
 
+		return 0;
 	}
 };
 

@@ -5,10 +5,13 @@
 #define MAP_H
 
 #include <iostream>
+//#include <QGeoAddress>
+//#include <QGeoCoordinate>
+//#include <QGeoLocation>
 using namespace std;
 
 
-class Voice {
+class Map {
 private:
 	double longitude, latitude;
 
@@ -18,9 +21,11 @@ public:
 	}
 	int getLongitude() {
 
+		return 0;
 	}
 	int getLatitude() {
 
+		return 0;
 	}
 };
 

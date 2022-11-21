@@ -19,15 +19,18 @@ public:
 	}
 	string getActivePhrase() {
 
+		return " ";
 	}
 	void setPhraseSaid(int signal) {
 
 	}
 	bool confirmPhraseSaid() {
 
+		return;
 	}
 	void readVoiceCommand() {
 
+		return;
 	}
 };
 

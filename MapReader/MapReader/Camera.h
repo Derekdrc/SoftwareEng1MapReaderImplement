@@ -18,6 +18,7 @@ public:
 	}
 	bool getOnSidewalk() {
 
+		return;
 	}
 	void setIsLight() {
 
@@ -27,18 +28,22 @@ public:
 	}
 	bool getCarNear() {
 
+		return;
 	}
 	void setIsSign() {
-
+		
+		return;
 	}
 	bool getIsSign() {
-
+		
+		return;
 	}
 	void setDogUsingBathroom() {
 
 	}
 	bool getDogUsingBathroom() {
 
+		return;
 	}
 };
 
