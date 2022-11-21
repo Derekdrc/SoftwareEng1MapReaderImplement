@@ -21,11 +21,11 @@ public:
 	}
 	int getLongitude() {
 
-		return 0;
+		return longitude;
 	}
 	int getLatitude() {
 
-		return 0;
+		return latitude;
 	}
 };
 
