@@ -13,37 +13,85 @@ private:
 	bool onSidewalk, isLight, carNear, isSign, dogRestroom;
 
 public:
-	void setOnSidewalk() {
-
+	void setOnSidewalk(int signal) 
+	{
+		if (signal == 1)
+		{
+			onSidewalk = true;
+		}
+		else
+		{
+			onSidewalk = false;
+		}
 	}
-	bool getOnSidewalk() {
+	bool getOnSidewalk() 
+	{
 
-		return;
+		return onSidewalk;
 	}
-	void setIsLight() {
+	void setIsLight(int signal) 
+	{
+		if (signal == 1)
+		{
+			isLight = true;
+		}
+		else
+		{
+			isLight = false;
+		}
+	}
 
-	}
-	void setCarNear() {
+	bool getisLight() {
 
+		return isLight;
 	}
-	bool getCarNear() {
 
-		return;
+	void setCarNear (int signal) 
+	{
+		if (signal == 1)
+		{
+			carNear = true;
+		}
+		else
+		{
+			carNear = false;
+		}
 	}
-	void setIsSign() {
+	bool getCarNear() 
+	{
+
+		return carNear;
+	}
+	void setIsSign(int signal) 
+	{
+		if (signal == 1)
+		{
+			isSign = true;
+		}
+		else
+		{
+			isSign = false;
+		}
 		
-		return;
 	}
 	bool getIsSign() {
 		
-		return;
+		return isSign;
 	}
-	void setDogUsingBathroom() {
-
+	void setDogUsingBathroom(int signal) 
+	{
+		if (signal == 1)
+		{
+			dogRestroom = true;
+		}
+		else
+		{
+			dogRestroom = false;
+		}
 	}
 	bool getDogUsingBathroom() {
 
-		return;
+		return dogRestroom;
 	}
 };
 
