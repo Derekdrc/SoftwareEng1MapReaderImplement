@@ -15,18 +15,25 @@ private:
 
 public:
 	void setActivePhrase() {
-
+		//set activePhrase to a value
 	}
 	string getActivePhrase() {
 
-		return " ";
+		return activePhrase;
 	}
 	void setPhraseSaid(int signal) {
-
+		if (signal == 1)
+		{
+			phraseSaid = true;
+		}
+		else
+		{
+			phraseSaid = false;
+		}
 	}
-	bool confirmPhraseSaid() {
-
-		return;
+	bool confirmPhraseSaid() 
+	{
+		return phraseSaid;
 	}
 	void readVoiceCommand() {
 
