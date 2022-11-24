@@ -8,17 +8,28 @@
 using namespace std;
 
 
-class Location {
+class Location: protected Map 
+{
 private:
 	string address, street, zipCode, city, state;
 	
 public:
-	void findAddress() {
+	void findAddress() 
+	{
+		computePosition();
+
+		//Use the longitude and latitude to find the street,
+		//zipCode, state, and city
+
+		//Sets the street, zipCode, state, city to a value
+
+
+		address = street + "," + zipCode + "," + city + "," + state;
 
 	}
-	int getAddress() {
+	string getAddress() {
 
-		return 0;
+		return address;
 	}
 };
 
