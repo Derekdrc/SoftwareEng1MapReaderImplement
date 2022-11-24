@@ -8,7 +8,7 @@
 using namespace std;
 
 
-class Voice {
+class GPS {
 private:
 	Location currentLocation;
 	Location destination;
@@ -16,15 +16,48 @@ private:
 	bool distanceReached;
 
 public:
-	void setCurrentLocation() {
+	void setCurrentLocation() 
+	{
+		currentLocation.findAddress();
+	}
+	void setDistance() 
+	{
+		destination.findAddress();
+	}
+	void setWalkDistance() 
+	{
+		//Calculate the distance between the Destination 
+		//and the currentLocation using latitude and longitude
+
+		//Set the WalkDistance to the value
 
 	}
-	void setDistance() {
+	float getWalkDistance()
+	{
+
+		return walkDistance;
+	}
+
+	
+	void setDistanceReached(int signal)
+	{
+		if (signal == 1)
+		{
+			distanceReached = true;
+		}
+		else
+		{
+			distanceReached = false;
+		}
+
 
 	}
-	void setWalkDistance () {
+	bool getDistanceReached()
+	{
 
+		return distanceReached;
 	}
+
 };
 
 #endif // !GPS_H
